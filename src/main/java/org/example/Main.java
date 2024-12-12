@@ -1,18 +1,23 @@
 package org.example;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        WordDictionary dictionary = new WordDictionary();
-        dictionary.addWord("Movie", "영화");
-        dictionary.addWord("cat", "고양이");
-        dictionary.addWord("Dog", "개");
-        dictionary.addWord("book", "책");
-        dictionary.addWord("soap", "비누");
-        dictionary.addWord("Glasses", "안경");
+        PokeBag pokeBag = new PokeBag();
 
-        System.out.println(dictionary.find("Book"));
-        System.out.println(dictionary.find("glasses"));
+        pokeBag.add(new Pokemon("마그마", 1024));
+        pokeBag.add(new Pokemon("마그마그", 215));
+        pokeBag.add(new Pokemon("마릴", 816));
+        pokeBag.add(new Pokemon("마그마그", 136));
+        pokeBag.add(new Pokemon("라프라스", 1822));
+        pokeBag.add(new Pokemon("마릴", 215));
+        pokeBag.add(new Pokemon("마릴", 185));
+        pokeBag.add(new Pokemon("마릴", 110));
+        pokeBag.add(new Pokemon("니드킹", 1709));
+        pokeBag.add(new Pokemon("마릴", 39));
+        pokeBag.add(new Pokemon("마자용", 12));
+
+        System.out.println(pokeBag.getStrongest("마릴"));
+        System.out.println(pokeBag.getStrongest());
+        System.out.println(pokeBag.getStrongest("피카츄"));
     }
 }
