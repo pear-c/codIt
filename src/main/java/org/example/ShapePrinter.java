@@ -9,4 +9,18 @@ public class ShapePrinter {
             System.out.println();
         }
     }
+    public void printPyramid(int height) {
+        for(int i=0; i<height; i++) {
+            for(int j=height-1; j>i; j--) {
+                System.out.print(" ");
+            }
+            for(int j=0; j<=i; j++) {
+                System.out.print("*");
+            }
+            for(int j=0; j<i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
