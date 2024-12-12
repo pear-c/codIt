@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Pokemon;
 
 public class Pokemon {
     public final String name;

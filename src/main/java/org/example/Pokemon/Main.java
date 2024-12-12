@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Pokemon;
 
 public class Main {
     public static void main(String[] args) {
