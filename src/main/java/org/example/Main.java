@@ -1,14 +1,18 @@
 package org.example;
 
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.format("35 lb -> %.2f kg\n", UnitConverter.toKilograms(35));
-        System.out.format("62 kg -> %.2f lb\n", UnitConverter.toPounds(62));
-        System.out.format("12.2 in -> %.2f cm\n", UnitConverter.toCentimeters(12.2));
-        System.out.format("3.82 cm -> %.2f in\n", UnitConverter.toInches(3.82));
-        System.out.format("48 °F -> %.2f °C\n", UnitConverter.toCelsius(48));
-        System.out.format("-9 °C -> %.2f °F\n", UnitConverter.toFahrenheit(-9));
+        WordDictionary dictionary = new WordDictionary();
+        dictionary.addWord("Movie", "영화");
+        dictionary.addWord("cat", "고양이");
+        dictionary.addWord("Dog", "개");
+        dictionary.addWord("book", "책");
+        dictionary.addWord("soap", "비누");
+        dictionary.addWord("Glasses", "안경");
+
+        System.out.println(dictionary.find("Book"));
+        System.out.println(dictionary.find("glasses"));
     }
 }
